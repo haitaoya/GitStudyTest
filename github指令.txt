@@ -1,0 +1,17 @@
+设置用户名密码（email） 在c/user/admin/.gitconfig中查看
+git config --global user.name "wht"
+git config --global user.email "958597506@qq.com"
+
+
+ssh-keygen -t rsa -C 958597506@qq.com
+一直回车 创建ssh密钥 c/user/admin/ssh/中
+
+打开GitHub.com setting ssh 将 id_rsa.pub 文件中的内容复制过去
+
+ssh -T git@github.com
+yes
+
+查看是否连接成功  成功--/.ssh中发现know.hosts文件  
+如果失败 多试几次 或者检查回车符
+
+在本地新建git项目 发送到远程
